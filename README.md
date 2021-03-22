@@ -7,3 +7,5 @@ Amazing features such as:
 - Super fast movement speeds!
 - A single weapon!
 - A single enemy that can be shot with 100% autoaim accuracy and dies in one hit!
+
+#### This repo holds the base game that can be run with Corona Simulator -- an iOS version exists at https://github.com/That1M8Head/DOOM-8-iOS.
