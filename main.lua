@@ -14,7 +14,7 @@ audio.play(E1M1, { channel=1, loops=-1 })
 
 local pistol_sound = audio.loadSound("DSPISTOL.wav")
 
-local background = display.newImageRect("background.png", 590, 520)
+local background = display.newImageRect("background.png", 1080, 780)
 background.x = display.contentCenterX
 background.y = display.contentCenterY
 
