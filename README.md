@@ -1,7 +1,7 @@
 # DOOM 8
 A stupid fan game based on DOOM that lasts for about five seconds before you get bored and put it away forever.
 
-![DOOM 8](https://github.com/That1M8Head/DOOM 8/raw/e1m1/doom-8-screenshot.png)
+![DOOM 8](https://github.com/That1M8Head/DOOM-8/raw/e1m1/doom-8-screenshot.png)
 
 Amazing features such as:
 - Super fast movement speeds!
