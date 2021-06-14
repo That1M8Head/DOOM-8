@@ -7,6 +7,7 @@
 -- Your code here
 
 local composer = require( "composer" )
+HelpShown = true
 
 local E1M1 = audio.loadStream("D_E1M1.wav")
 audio.setVolume( 1, { channel=1 } )
@@ -47,6 +48,15 @@ fire_button.y = display.contentHeight-100
 local logo = display.newImageRect("doom_8.png", 111, 80)
 logo.x = display.contentCenterX
 logo.y = display.contentHeight-50
+
+local help = display.newImageRect("help.png", 72, 22)
+help.x = display.contentCenterX+330
+help.y = display.contentHeight-50
+
+local helptext = display.newImageRect("helptext.png", 577, 101)
+helptext.x = display.contentCenterX
+helptext.y = display.contentHeight-400
+helptext.isVisible = false
 
 local zombieman = display.newImageRect("zombieman.png", 56, 85)
 zombieman.x = display.contentCenterX-220
@@ -101,6 +111,15 @@ local function fireWeapon()
 	timer.performWithDelay(500, defire)
 	timer.performWithDelay(3000, undie)
 end
+
+local function showHelp()
+	if helptext.isVisible then
+		helptext.isVisible = false
+	else
+		helptext.isVisible = true
+	end
+end
+help:addEventListener("tap", showHelp)
 
 left_arrow:addEventListener("touch", moveLeft)
 right_arrow:addEventListener("touch", moveRight)
